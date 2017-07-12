@@ -1,11 +1,12 @@
 FROM node:boron
 
-LABEL maintainer "Eduardo Cuomo <reduardo7@gmail.com>"
+LABEL maintainer "Cloud Mario <chenzheng@me.com>"
 
 ENV DB_HOST db-host
 ENV DB_USER root
 ENV DB_PASS root
 ENV DB_DATABASE app
+ENV DB_PORT 3306
 
 RUN mkdir -p /app
 WORKDIR /app
